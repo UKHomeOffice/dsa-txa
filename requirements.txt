@@ -1,0 +1,11 @@
+awscli
+s3cmd>=2.0.2
+python-magic>=0.4.15
+botocore>=1.12.127
+boto3>=1.9.127
+jaeger_client
+pyyaml
+pytest
+spacy>=2.0.0,<3.0.0
+pandas
+numpy
