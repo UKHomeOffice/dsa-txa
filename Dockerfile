@@ -46,9 +46,6 @@ RUN npm install aws-es-curl -g
 # Create and configure non-root user
 RUN adduser -u 1000 -D -h /home/tools -s /bin/bash tools
 
-COPY src/bash/ /root/
-COPY src/testing /home/tools/testing
-COPY src/BICS03 /home/tools/BICS03
 RUN chown -R tools:tools /home/tools
 
 WORKDIR /home/tools
