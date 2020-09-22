@@ -44,12 +44,3 @@ RUN /usr/local/bin/python -m spacy download en_core_web_sm
 
 RUN npm install aws-es-curl -g 
 # Create and configure non-root user
-RUN adduser -u 1000 -D -h /home/tools -s /bin/bash tools
-
-RUN chown -R tools:tools /home/tools
-
-WORKDIR /home/tools
-
-USER 1000
-
-
